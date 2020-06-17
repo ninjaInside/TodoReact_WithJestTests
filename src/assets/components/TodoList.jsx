@@ -2,7 +2,7 @@ import React from 'react'
 
 import Todo from 'Components/Todo.jsx'
 
-import styles from 'Styles/main.sass'
+import styles from '../styles/main.sass'
 
 function TodoList(props) {
 	return (

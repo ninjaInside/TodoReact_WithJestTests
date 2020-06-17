@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 
-import styles from 'Styles/main.sass'
+import styles from '../styles/main.sass'
 
 function TodoForm(props) {
 	const inputTodo = useRef(null)

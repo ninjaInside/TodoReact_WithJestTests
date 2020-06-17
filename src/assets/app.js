@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom'
 import TodoForm from 'Components/TodoForm.jsx'
 import TodoList from 'Components/TodoList.jsx'
 
-import styles from 'Styles/main.sass'
+import styles from '../styles/main.sass'
 
 function TodoApp(props) {
 	const [todos, setTodo] = useState([])

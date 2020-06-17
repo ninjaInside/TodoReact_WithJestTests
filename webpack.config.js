@@ -7,12 +7,13 @@ const path 					  = require('path')
 const HardSourceWebpackPlugin = require('hard-source-webpack-plugin')
 
 const paths = {
-	src: path.resolve(__dirname, 'src/assets/app/'),
+	src: path.resolve(__dirname, 'src/assets/'),
 	view: path.resolve(__dirname, 'dist/view'),
 	dist: path.resolve(__dirname, 'dist/assets'),
-	stylesAlias: path.resolve(__dirname, 'src/assets/app/styles'),
-	componentsAlias: path.resolve(__dirname, 'src/assets/app/components'),
-	services: path.resolve(__dirname, 'src/assets/app/services')
+	styles: path.resolve(__dirname, 'src/assets/styles'),
+	components: path.resolve(__dirname, 'src/assets/components'),
+	services: path.resolve(__dirname, 'src/assets/services'),
+	image: path.resolve(__dirname, 'src/assets/image')
 }
 
 const NODE_ENV = process.env.NODE_ENV || 'development'
@@ -95,11 +96,12 @@ module.exports = {
 	},
 
 	resolve: {
-		modules: ["node_modules", paths.src],
+		modules: ["node_modules", paths.src, path.styles, path.styles],
 		alias: {
-			Styles: paths.stylesAlias,
-			Components: paths.componentsAlias,
-			Services: paths.services	
+			Styles: paths.styles,
+			Components: paths.components,
+			Services: paths.services,	
+			Image: paths.image	
 		}
 	},
 

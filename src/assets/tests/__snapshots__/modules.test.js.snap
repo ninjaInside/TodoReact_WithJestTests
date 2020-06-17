@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test "Todo.jsx" component 1`] = `
+<li>
+  todos
+</li>
+`;
+
+exports[`Test "Todo.jsx" components 1`] = `
+<li>
+  todos
+</li>
+`;
+
+exports[`Test "TodoForm.jsx" component 1`] = `
+<li>
+  todos
+</li>
+`;
+
+exports[`Test "TodoForm.jsx" components 1`] = `
+<li>
+  todos
+</li>
+`;
+
+exports[`Test "TodoList.jsx" component 1`] = `
+<li>
+  todos
+</li>
+`;
+
+exports[`Test "TodoList.jsx" components 1`] = `
+<li>
+  todos
+</li>
+`;
