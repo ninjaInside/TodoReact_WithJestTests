@@ -9,12 +9,13 @@ function TodoForm(props) {
 		<>
 			<input 
 				ref={inputTodo}
-				className={styles.todoField__inputAdd}/>
+				className={styles.todoField__inputAdd}
+				placeholder='Add Todo'/>
 			<button 
+				className={styles.todoField__btn}
 				onClick={() => {
 					props.addTodo(inputTodo.current.value)
-					inputTodo.current.value = ''}}
-				className={styles.todoField__buttonAdd}>Set todo</button>
+					inputTodo.current.value = ''}}>Set todo</button>
 		</>
 	)
 }

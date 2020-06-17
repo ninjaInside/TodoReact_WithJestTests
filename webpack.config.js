@@ -96,7 +96,7 @@ module.exports = {
 	},
 
 	resolve: {
-		modules: ["node_modules", paths.src, path.styles, path.styles],
+		modules: ["node_modules", paths.src, paths.components, paths.styles],
 		alias: {
 			Styles: paths.styles,
 			Components: paths.components,

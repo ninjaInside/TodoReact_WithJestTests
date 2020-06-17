@@ -1,10 +1,17 @@
 import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
+import WebFont from 'webfontloader'
+
+WebFont.load({
+	google: {
+		families: ['MuseoModerno']
+	}
+})
 
 import TodoForm from 'Components/TodoForm.jsx'
 import TodoList from 'Components/TodoList.jsx'
 
-import styles from '../styles/main.sass'
+import styles from './styles/main.sass'
 
 function TodoApp(props) {
 	const [todos, setTodo] = useState([])
@@ -17,11 +24,7 @@ function TodoApp(props) {
 
 	return (
 		<div className={styles.todoField}>
-			<div className={
-				`	${styles.wrraper} 
-					${styles.wrraper_w400} 
-					${styles.wrraper_flexC}
-					${styles.wrraper_mgt35}`}>
+			<div className={styles.todoField__field}>
 				<span
 					className={styles.todoField__logo}>It's todo list</span>
 				<TodoForm addTodo={addTodo}/>
