@@ -15,7 +15,7 @@ function TodoForm(props) {
 				className={styles.todoField__btn}
 				onClick={() => {
 					props.addTodo(inputTodo.current.value)
-					inputTodo.current.value = ''}}>Set todo</button>
+					inputTodo.current.value = ''}}>S</button>
 		</>
 	)
 }

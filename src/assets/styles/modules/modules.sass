@@ -1,7 +1,11 @@
 .todoField 
-	@include size(100%, 100vh)
+	@include size(100%, auto)
+	min-height: 100vh
 	@include flex(column, center, center)
 	background: #eee
+
+	* 
+		font-family: 'MuseoModerno'
 
 	&__btn 
 		@include size(64px, 64px)
@@ -11,9 +15,10 @@
 		position: absolute
 		left: 0
 		right: 0
-		background-color: rgba(4, 106, 56, 1)
+		background-color: #03c03c
 		cursor: pointer
 		bottom: -32px
+		color: #fff
 
 	&__field 
 		@include flex(column, flex-start, flex-start)
@@ -22,28 +27,22 @@
 		max-width: 300px
 		background-color: $white
 		box-shadow: 0px 2px 2px rgba(black, .3)
+		padding: 5px
 
 	&__logo, &__inputAdd, &__todosList
-		@include size(100%, auto)
 		margin-bottom: 15px
 
 	&__todosList
 		@include size(100%, auto)
 		min-height: 350px
+		max-height: 350px
 		overflow-y: auto
 		list-style: none
 		padding: 0
 		word-break: break-all
 
-		& > li 
-			@include size(100%, auto)
-			text-align: center
-			margin-bottom: 10px 
-
-			&:last-child 
-				margin: 0 !important
-
 	&__inputAdd 
+		@include size(100%, auto)
 		border: 0
 		border-radius: 0
 		border-bottom: 1px solid rgba(black, .5)
@@ -58,3 +57,26 @@
 	width: 100%
 	max-width: 1200px
 	height: 100%
+
+.todoItem 
+	@include flex(row, space-between, flex-start)
+	@include size(100%, auto)
+	text-align: center
+	margin-bottom: 10px 
+
+	&__text 
+		padding-right: 20px 
+		text-align: left
+		align-self: center
+
+	&__btn 
+		@include size(32px, 32px)
+		border: 0
+		background-color: red
+		border-radius: 1000px
+		cursor: pointer
+		color: #fff
+		flex-shrink: 0
+
+	&:last-child 
+		margin: 0 !important
