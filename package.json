@@ -31,7 +31,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.0.1",
     "jest-transform-stub": "^2.0.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "node-sass": "^4.13.1",
     "normalize.css": "^8.0.1",
     "owl.carousel2": "^2.2.1",
